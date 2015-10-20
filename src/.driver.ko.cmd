@@ -1,0 +1,1 @@
+cmd_/home/iikem/Temporary/kern/src/driver.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/iikem/Temporary/kern/src/driver.ko /home/iikem/Temporary/kern/src/driver.o /home/iikem/Temporary/kern/src/driver.mod.o
