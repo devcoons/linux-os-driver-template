@@ -57,7 +57,7 @@
 
 	static ssize_t dev_write(struct file *filep, const char *buffer, size_t len, loff_t *offset)
 	{
-		sprintf(drv_data.message, "%s(%zu letters)", buffer, len);   
+		sprintf(drv_data.message, "%s", buffer);   
 		drv_data.sizeof_message = strlen(drv_data.message); 
 		printk(KERN_INFO "Driver: Received %zu characters from the user\n", len);
 		return len;
