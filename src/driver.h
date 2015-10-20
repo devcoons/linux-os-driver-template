@@ -26,10 +26,11 @@
 				struct device	* amm_device;			
 			}drv_data;
 			
-			static int     dev_open(struct inode *, struct file *);
-			static int     dev_release(struct inode *, struct file *);
-			static ssize_t dev_read(struct file *, char *, size_t, loff_t *);
-			static ssize_t dev_write(struct file *, const char *, size_t, loff_t *);
+			static int 		dev_open	(	struct inode *, struct file * );
+			static int 		dev_release	(	struct inode *, struct file * );
+	
+			static ssize_t 	dev_read	(	struct file  *, char * 		 , size_t , loff_t *	);
+			static ssize_t 	dev_write	(	struct file  *, const char  *, size_t , loff_t *	);
 			
 			static struct file_operations fops =
 			{
@@ -39,12 +40,9 @@
 			   .release = dev_release,
 			};
 			
-			static int __init drv_devchar_init(void);
-			static void __exit drv_devchar_exit(void);
-			static int dev_open(struct inode *inodep, struct file *filep);
-			static ssize_t dev_read(struct file *filep, char *buffer, size_t len, loff_t *offset);
-			static ssize_t dev_write(struct file *filep, const char *buffer, size_t len, loff_t *offset);
-			static int dev_release(struct inode *inodep, struct file *filep);
-	
+			static int 	__init 	drv_devchar_init	(void);
+			static void __exit 	drv_devchar_exit	(void);
+			
+
 #endif
 	
