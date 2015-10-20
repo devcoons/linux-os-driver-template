@@ -1,1 +1,0 @@
-cmd_/home/iikem/Projects/linux-driver-template/src/driver.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/iikem/Projects/linux-driver-template/src/driver.ko /home/iikem/Projects/linux-driver-template/src/driver.o /home/iikem/Projects/linux-driver-template/src/driver.mod.o
